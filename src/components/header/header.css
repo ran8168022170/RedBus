@@ -1,0 +1,42 @@
+.header {
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    background-color: rgb(190, 12, 12);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+}
+
+a>span {
+    margin: 0 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+a>span:hover {
+    color: rgb(0, 174, 255);
+}
+
+.header__icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+.user__avatar {
+    font-size: 2rem;
+}
+.login__icon{
+    width: 35px;
+    height: 30px;
+}
+

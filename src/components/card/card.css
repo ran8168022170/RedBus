@@ -1,0 +1,62 @@
+.listMain {
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+    color: black;
+    background-color: white;
+}
+
+.listSuper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.date{
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
+.departureName{
+    font-size: large;
+    font-weight: 700;
+}
+
+.arrivalName {
+    font-size: large;
+    font-weight: 700;
+}
+.busName{
+    font-size: large;
+    font-weight: 700;
+    color: white;
+
+}
+.date{
+    font-size: large;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+    z-index: 1000;
+    color: white;
+}
+.daparture{
+    padding: 2px;
+    color: white;
+}
+.arrival{
+    padding: 2px;
+    color: white;
+}
+.fare{
+    font-size: large;
+    font-weight: 700;
+    background-color: red;
+    color: white;
+}

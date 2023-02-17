@@ -1,0 +1,43 @@
+.bus__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+    font-size: 1.75rem;
+    margin: 2.5rem;
+}
+
+.list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.submain1 {
+    background-color: red;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+}
+
+.super {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    background-color: white;
+}
