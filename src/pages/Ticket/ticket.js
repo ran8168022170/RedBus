@@ -16,14 +16,19 @@ const Ticket = () => {
   }, []);
 
   const items = JSON.parse(localStorage.getItem("items"));
-  //var busTicketPrice = bus[0].ticketPrice;
 
-  //console.log(busTicketPrice);
-  console.log(bus[0]);
-  //var price = items.length * busTicketPrice;
-  var price = 600;
+  //   var busTicketPrice = bus[0].ticketPrice;
+
+  if (bus[0]) {
+    var busTicketPrice = bus[0].ticketPrice;
+  }
+
+  var price = items.length * busTicketPrice;
+  //var price = 600;
 
   var clearLocalStorage = () => {
+    const res = JSON.parse(localStorage.getItem("reserved")) || [];
+    localStorage.setItem("reserved", JSON.stringify([...items, ...res]));
     localStorage.removeItem("items");
   };
 
@@ -33,7 +38,12 @@ const Ticket = () => {
       {items.map((seat) => (
         <span className="seatNumber"> {seat} </span>
       ))}
-      <h1>YOUR TOTAL BILL IS : {price}</h1>
+      <h1>
+        YOUR TOTAL BILL IS :
+        <span style={{ color: "green" }}>
+          {isNaN(price) ? "Calculating ....!!!" : "₹ " + price}
+        </span>
+      </h1>
 
       <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
         <div className="back" onClick={clearLocalStorage}>

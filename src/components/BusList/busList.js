@@ -3,11 +3,8 @@ import Cards from "../card/card";
 import "./busList.css";
 
 const BusList = ({ busList }) => {
-  //const { type } = useParams();
-
   return (
     <div className="bus__list">
-      {/* <h2 className="list__title">{(type ? type : "POPULAR").toUpperCase()}</h2> */}
       <div class="super">
         <div class="main1">
           <div class="heading ">

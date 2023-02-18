@@ -4,9 +4,9 @@ import "./seat.css";
 import { Link } from "react-router-dom";
 
 const Seat = (props) => {
-  const [reserved, setReserved] = useState([1, 6]);
-  const [temp, setTemp] = useState([]);
-  function fun(e) {
+  const reserved = JSON.parse(localStorage.getItem("reserved")) || [];
+
+  function checkSeat(e) {
     const c = Number(e.target.id);
 
     if (reserved.includes(c)) {
@@ -38,18 +38,18 @@ const Seat = (props) => {
         <div
           id={props.bus}
           style={{ width: 110, height: 30, background: "grey" }}
-          onClick={fun}
+          onClick={checkSeat}
         ></div>
       ) : props.tempArr.includes(props.bus) ? (
         <div
           id={props.bus}
-          onClick={fun}
+          onClick={checkSeat}
           style={{ width: 110, height: 30, background: "green" }}
         ></div>
       ) : (
         <div
           id={props.bus}
-          onClick={fun}
+          onClick={checkSeat}
           style={{ width: 110, height: 30, background: "blue" }}
         ></div>
       )}

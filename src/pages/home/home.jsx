@@ -1,45 +1,33 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
 import BusList from "../../components/BusList/busList";
+import {getData} from '../../utils/service'
 
 const Home = () => {
-  const [source, setSource] = useState("delhi");
-  const [destination, setDestination] = useState("jaipur");
+  const [source, setSource] = useState("");
+  const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
   const [variable, setVar] = useState(1);
 
-  const [busList, setBusList] = useState([
-    // {
-    //   id: "1",
-    //   busName: "zing Bus",
-    //   ticketPrice: "480",
-    //   arrivalTime: "12:09AM",
-    //   departureTime: "6:00PM",
-    //   source: "jaipur",
-    //   destination: "delhi",
-    //   date: "2023-01-21",
-    // },
-  ]);
-  console.log("source " + source);
-  console.log("destination " + destination);
+  const [busList, setBusList] = useState([]);
 
   useEffect(() => {
-    getData();
+    getData(source,destination,date,setBusList);
   }, [variable]);
+   const getData = () => {
+  fetch(
+    `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${source}&destination=${destination}&date=${date}`
+  )
+    .then((res) => res.json())
+    .then((data) => setBusList(data))
+    .catch((error) => {
+      console.log("error: " + error);
+    });
+};
 
-  const getData = () => {
-    fetch(
-      `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${source}&destination=${destination}`
-    )
-      .then((res) => res.json())
-      .then((data) => setBusList(data));
-    // .catch((error) => {
-    //   console.log("error: " + error);
-    // });
-  };
+  
 
   const exchange = () => {
-    console.log("hello");
     var temp = source;
     setSource(destination);
     setDestination(temp);
@@ -47,9 +35,6 @@ const Home = () => {
   const search = () => {
     setVar(variable + 1);
   };
-
-  // console.log(busList[0]);
-  console.log(variable);
 
   return (
     <>
@@ -96,7 +81,12 @@ const Home = () => {
           </div>
           <div>
             <div>
-              <input type="date" id="date" placeholder="Date" />
+              <input
+                type="date"
+                id="date"
+                placeholder="Date"
+                onChange={(e) => setDate(e.target.value)}
+              />
             </div>
           </div>
           <div>

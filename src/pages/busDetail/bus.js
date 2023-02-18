@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./bus.css";
+import "./style.css";
 import { Link } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
@@ -23,8 +23,6 @@ const Bus = () => {
   const [bottomDetail, setBottom] = useState([
     21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
   ]);
-  //experiment
-  console.log("busComponent", id);
   return (
     <div className="">
       <div className="bus"></div>
