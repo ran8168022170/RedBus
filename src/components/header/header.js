@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
+import icon from "../../images/icon.png";
+//import { useState } from "react";
 
 const Header = () => {
+  const [checked, setChecked] = useState(0);
+  // for toggle login-logout
+  const [state, setState] = useState(1);
+  const changeState = () => {
+    if (state === 2) setState(1);
+    else setState(2);
+  };
+  function toggleMenu() {
+    // subMenu.classNameList.toggle("open-menu");
+    if (checked) setChecked(0);
+    else setChecked(1);
+
+    console.log("Working");
+  }
   return (
     <div className="header">
       <div className="headerLeft">
@@ -25,8 +41,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="headerRight">
-        <div>
+      <div className="headerRightOutside">
+        <div className="headerRight">
           <Link style={{ textDecoration: "none" }}>
             <span>Help</span>
           </Link>
@@ -35,13 +51,60 @@ const Header = () => {
           </Link>
           <Link style={{ textDecoration: "none" }}>
             <span className="icon">
-              <img
-                className="login__icon"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQk_YLiGYmCWN9N_UMuFeiqrr91TW1VaVhXw&usqp=CAU"
-              />
+              <img className="login__icon" src={icon} onClick={toggleMenu} />
             </span>
           </Link>
         </div>
+        {checked ? (
+          <div className="sub-menu-wrap" id="subMenu">
+            <div className="sub-menu">
+              <div className="user-info">
+                <h3>This is for demo</h3>
+              </div>
+              <a href="#" className="sub-menu-link">
+                <p>Edit profile</p>
+              </a>
+              <a href="#" className="sub-menu-link">
+                <p>Settings</p>
+              </a>
+              {state == 2 ? (
+                <Link
+                  onClick={changeState}
+                  to={"/login"}
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    width: 60,
+                    height: 30,
+                  }}
+                >
+                  <div className="sub-menu-link">
+                    <p>Log in</p>
+                    <span>&gt;</span>
+                  </div>
+                </Link>
+              ) : (
+                <Link
+                  onClick={changeState}
+                  to={"/"}
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    width: 60,
+                    height: 30,
+                  }}
+                >
+                  <div className="sub-menu-link">
+                    <p>Log out</p>
+                    <span>&gt;</span>
+                  </div>
+                </Link>
+              )}
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

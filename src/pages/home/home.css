@@ -17,6 +17,7 @@
     color: white;
     align-items: center;
     border: 2px solid red;
+    object-fit: cover;
     background-image: "https: //www.shutterstock.com/image-vector/arrows-exchange-horizontal-icon-primitive-260nw-319667090.jpg";
 
 }

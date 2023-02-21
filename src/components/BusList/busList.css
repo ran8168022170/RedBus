@@ -18,18 +18,18 @@
     justify-content: space-around;
     align-items: center;
     width: 800px;
-    border: 2px solid red;
+    border: 2px solid rgb(215, 206, 206);
     background-color: white;
 }
 
 .submain1 {
-    background-color: red;
+    background-color: rgb(78, 211, 54);
     width: 70px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: medium;
 }
 

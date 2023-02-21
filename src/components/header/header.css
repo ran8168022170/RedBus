@@ -1,7 +1,7 @@
 .header {
     margin: 0 2.5rem;
     padding: .5rem 0;
-    background-color: rgb(190, 12, 12);
+    background-color: red;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,19 @@ a>span:hover {
     font-size: 2rem;
 }
 .login__icon{
-    width: 35px;
+    width: 30px;
     height: 30px;
+    /* filter: invert(100%); */
+outline-color: white;
 }
+.sub-menu-wrap{
+    margin-top: 40px;
+    margin-right: 5px;
+}
+.headerRightOutside{
+    display: flex;
+    flex-direction: column;
+}
+.sub-menu{
+text-align: right;}
 

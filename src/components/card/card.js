@@ -16,12 +16,12 @@ const Cards = ({ bus }) => {
           <div class="listMain">
             <div class="busName">{bus.busName}</div>
             <div class="daparture">
-              <div className="departureLabel">Departure</div>
-              <div className="departureName">{bus.source}</div>
+              <div className="departureLabel">Arrival</div>
+              <div className="departureName">{bus.arrivalTime}</div>
             </div>
             <div class="arrival">
-              <div className="arrivalLabel">Arrival</div>
-              <div className="arrivalName">{bus.destination}</div>
+              <div className="arrivalLabel">Departure</div>
+              <div className="arrivalName">{bus.departureTime}</div>
             </div>
             <div class="date">
               <div className="ratingInside">{bus.date}</div>

@@ -2,28 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./home.css";
 import BusList from "../../components/BusList/busList";
 import {getData} from '../../utils/service'
+import bg_image from '../../images/redbus.png'
 
 const Home = () => {
   const [source, setSource] = useState("");
   const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
   const [variable, setVar] = useState(1);
+  //const [busList, setBusList] = useState([]);
 
-  const [busList, setBusList] = useState([]);
-
-  useEffect(() => {
-    getData(source,destination,date,setBusList);
-  }, [variable]);
-   const getData = () => {
-  fetch(
-    `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${source}&destination=${destination}&date=${date}`
-  )
-    .then((res) => res.json())
-    .then((data) => setBusList(data))
-    .catch((error) => {
-      console.log("error: " + error);
-    });
-};
+  
 
   
 
@@ -41,12 +29,14 @@ const Home = () => {
       <div
         className="main"
         style={{
-          backgroundImage: `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ad6VFkCoJOIHJFGrSljvfc1LcnYKzCuUkA&usqp=CAU")`,
+          
+          backgroundImage: `url(${bg_image})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
         <div class="mainbox">
+        {/* <img src={bg_image} /> */}
           <div>
             <div>
               <input
@@ -97,7 +87,14 @@ const Home = () => {
         </div>
       </div>
 
-      <BusList busList={busList} />
+      <BusList 
+      source={source}
+      destination={destination}
+      date={date}
+      variable={variable}
+
+      
+       />
     </>
   );
 };
