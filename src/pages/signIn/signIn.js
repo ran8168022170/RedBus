@@ -63,12 +63,9 @@ const Login = (props) => {
         } else {
           console.log("user login succesfulyy");
           props.SetForChangeState(2);
-          //alert("success" + props.forChangeState);
           navigate("/");
 
           localStorage.setItem("user_login", JSON.stringify(userlogin));
-
-          //history("/details");
         }
       }
     }
@@ -103,10 +100,12 @@ const Login = (props) => {
             Log In
           </button>
           <div className="child2" style={{ height: 20 }}>
-            <p className="mt-3" id="AlreadyHaveAccount">
+            <p className="para-color">
               Don't Have An Account ?
               <span>
-                <NavLink to="/Register">SignUp</NavLink>
+                <NavLink style={{ background: "#78DC54" }} to="/Register">
+                  SignUp
+                </NavLink>
               </span>
             </p>
           </div>

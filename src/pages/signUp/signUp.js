@@ -25,10 +25,7 @@ const Register = () => {
   console.log(inpval);
 
   const getdata = (e) => {
-    // console.log(e.target.value);
-
     const { value, name } = e.target;
-    // console.log(value,name);
 
     setInpval(() => {
       return {
@@ -55,20 +52,18 @@ const Register = () => {
       alert("password length is short");
     } else {
       console.log("data added succesfully");
-      //navigate("/login");
-      //history("/login");
       localStorage.setItem("userData", JSON.stringify([...data, inpval]));
+      navigate("/login");
     }
   };
 
   return (
     <div className="auth-form-container">
-      <h1>Registration</h1>
+      <h1 id="form-name">Registration</h1>
       <div className="child1">
         <form className="register-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Full Name</label>
           <input
-            //value={name}
             name="name"
             onChange={getdata}
             id="name"
@@ -76,7 +71,6 @@ const Register = () => {
           />
           <label htmlFor="email">Email</label>
           <input
-            //value={email}
             type="email"
             placeholder="youremail@gmail.com"
             id="email"
@@ -85,7 +79,6 @@ const Register = () => {
           />
           <label htmlFor="password">Password</label>
           <input
-            //value={pass}
             name="password"
             onChange={getdata}
             type="password"
@@ -93,14 +86,16 @@ const Register = () => {
             id="password"
           />
 
-          <button type="submit" onClick={addData}>
+          <button id="btn" type="submit" onClick={addData}>
             Sign Up
           </button>
           <div className="child2">
-            <p className="mt-3">
-              Already Have an Account
+            <p className="para-color">
+              Already Have an Account.
               <span>
-                <NavLink to="/login">SignIn</NavLink>
+                <NavLink style={{ background: "#78DC54" }} to="/login">
+                  SignIn
+                </NavLink>
               </span>
             </p>
           </div>

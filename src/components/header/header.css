@@ -1,136 +1,136 @@
+/* body {
+  overflow: hidden;
+} */
 
-body{
-    overflow: hidden;
+#nav-bar {
+  /* background-color: #d55457; */
+  background-color: red;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
 }
 
- #nav-bar {
-     /* background-color: #d55457; */
-    background-color: red;
-     height: 50px;
-     display: flex;
-     justify-content: space-evenly;
-     width: 90%;
- } 
+#navbar-left {
+  padding-right: 700px;
+}
 
- #navbar-left {
-     padding-right: 700px;
- }
+#navbar-right {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
- #navbar-right {
-     margin-top: 24px;
-     display: flex;
-     justify-content: space-evenly;
- }
+#navbar-right a {
+  /* padding-right: 90px; */
+  color: white;
+  position: relative;
+  bottom: 13px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 350;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
- #navbar-right a {
-     /* padding-right: 90px; */
-     color: white;
-     position: relative;
-     bottom: 13px;
-     font-size: 16px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-weight: 350;
-     text-decoration: none;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
- }
+#profile {
+  right: -320px;
+  filter: invert(100%);
+  position: relative;
+  top: -15px;
+  height: 33px;
+  width: 33px;
+  border: 1px solid red;
+  border-radius: 17px;
+}
 
- #profile {
-     right: -320px;
-     filter: invert(100%);
-     position: relative;
-     top: -15px;
-     height: 33px;
-     width: 33px;
- }
+#profile:hover {
+  cursor: pointer;
+  filter: none;
+}
 
- #profile:hover {
-     cursor: pointer;
-     filter: none;
- }
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 250px;
+  /* overflow: hidden; */
+  height: 500px;
+  color: black;
+  transition: max-height 0.5s;
+}
 
- .sub-menu-wrap {
-     position: absolute;
-     top: 100%;
-     right: 10%;
-     width: 320px;
-     max-height: 250px;
-     /* overflow: hidden; */
-     height: 500px;
-     color: black;
-     transition: max-height 0.5s;
- }
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
 
- .sub-menu-wrap.open-menu {
-     max-height: 400px;
- }
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
 
- .sub-menu {
-     background: #fff;
-     padding: 20px;
-     margin: 10px;
+  /* for testing  */
 
-     /* for testing  */
+  right: -144px;
+  position: absolute;
+  top: -820px;
+}
 
-     right: -144px;
-     position: absolute;
-     top: -820px;
- }
+.user-info {
+  display: flex;
+  align-items: center;
+}
 
- .user-info {
-     display: flex;
-     align-items: center;
- }
-
- .user-info h3 {
-     font-weight: 500;
- }
+.user-info h3 {
+  font-weight: 500;
+}
 .sub-menu-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #525252;
-    margin: 12px 0;
-
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
 }
 
 .sub-menu-link p {
-    color: black;
-    width: 100%;
-    /* background-color: #e5e5e5; */
+  color: black;
+  width: 100%;
+  /* background-color: #e5e5e5; */
 }
 
 .sub-menu-link span {
-    color: black;
-    font-size: 22px;
-    transition: transform 0.5s;
+  color: black;
+  font-size: 22px;
+  transition: transform 0.5s;
 }
 
 .sub-menu-link:hover span {
-    transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .sub-menu-link:hover p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-#outer{
-    background-color: black;
-    position: absolute;
-    z-index: 2;
+#outer {
+  background-color: black;
+  position: absolute;
+  z-index: 2;
 }
 
 #home {
-    top: -10px;
-    right: -210px;
+  top: -10px;
+  right: -210px;
 }
 
 #help {
-    top: -10px;
-    right: -265px;
+  top: -10px;
+  right: -265px;
 }
 
-.sub-menu-link{
-    color: blue;
+.sub-menu-link {
+  color: blue;
 }

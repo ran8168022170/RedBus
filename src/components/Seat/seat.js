@@ -37,20 +37,20 @@ const Seat = (props) => {
       {reserved.includes(props.bus) ? (
         <div
           id={props.bus}
-          style={{ width: 110, height: 30, background: "grey" }}
+          style={{ width: 55, height: 30, background: "grey" }}
           onClick={checkSeat}
         ></div>
       ) : props.tempArr.includes(props.bus) ? (
         <div
           id={props.bus}
           onClick={checkSeat}
-          style={{ width: 110, height: 30, background: "green" }}
+          style={{ width: 55, height: 30, background: "green" }}
         ></div>
       ) : (
         <div
           id={props.bus}
           onClick={checkSeat}
-          style={{ width: 110, height: 30, background: "blue" }}
+          style={{ width: 55, height: 30, background: "blue" }}
         ></div>
       )}
     </>

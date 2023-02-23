@@ -135,16 +135,10 @@ export default function Header(props) {
   const openLoginPage = () => {
     //navigate("Login");
   };
-  // console.log(props.forChangeState);
-  // alert("header" + props.forChangeState);
 
   const forTest = () => {
     console.log("forTest");
   };
-
-  // if (props.forChangeState === 2) {
-  //   setState(2);
-  // }
 
   useEffect(() => {
     if (props.forChangeState === 2) {
@@ -164,10 +158,8 @@ export default function Header(props) {
   };
 
   let subMenu = document.getElementById("subMenu");
-  // console.log("okay",subMenu)
 
   function toggleMenu() {
-    // subMenu.classNameList.toggle("open-menu");
     if (checked) setChecked(0);
     else setChecked(1);
 
@@ -190,7 +182,6 @@ export default function Header(props) {
         <a id="help" href="#">
           Help
         </a>
-        {/* <a href="#">Contact us</a> */}
 
         <img src={icon} id="profile" onClick={toggleMenu} />
 
@@ -209,8 +200,6 @@ export default function Header(props) {
                 <span>{">"}</span>
               </a>
               {state === 1 ? (
-                // <a href="home" className="sub-menu-link" onClick={changeState}><p>Log out</p><span>&gt;</span><
-                // <div onClick={changeState} style={{width:60,height:30}}>
                 <Link
                   onClick={changeState}
                   to={"Login"}
@@ -227,8 +216,6 @@ export default function Header(props) {
                   </div>
                 </Link>
               ) : (
-                // </div>
-                // <div onClick={changeState} style={{width:60,height:30}}>
                 <Link
                   onClick={changeState2}
                   to={"/"}
@@ -244,13 +231,7 @@ export default function Header(props) {
                     <span>&gt;</span>
                   </div>
                 </Link>
-              )
-              // </div>
-              }
-
-              {/* <a href="#" className="sub-menu-link">
-                <p>Log out</p>
-              </a> */}
+              )}
             </div>
           </div>
         ) : (

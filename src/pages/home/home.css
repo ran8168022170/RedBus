@@ -1,54 +1,50 @@
-*{
-    background-color: red;
+* {
+  background-color: red;
+  /* margin: 2px; */
 }
 .main {
-    background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    padding: 5px;
-    font-weight: 20;
-    height: 600px;
-    width: 95%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin: 10px 40px;
-    color: white;
-    align-items: center;
-    border: 2px solid red;
-    object-fit: cover;
-    background-image: "https: //www.shutterstock.com/image-vector/arrows-exchange-horizontal-icon-primitive-260nw-319667090.jpg";
-
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 5px;
+  font-weight: 20;
+  height: 600px;
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 10px 40px;
+  color: white;
+  align-items: center;
+  border: 2px solid red;
+  object-fit: cover;
+  background-image: "https: //www.shutterstock.com/image-vector/arrows-exchange-horizontal-icon-primitive-260nw-319667090.jpg";
 }
-
 
 .mainbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1100px;
-    position: relative;
-    z-index: 18;
-    background: #00ffef;
-    border-radius: 5px;
-    height: 49px;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  position: relative;
+  z-index: 18;
+  background: #00ffef;
+  border-radius: 5px;
+  height: 49px;
 }
 .outside-input {
-
-margin-left: 5px;
-margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 input {
-    width: 200px;
-    height: 10px;
-    border-radius: 3px;
-    background: white;
-    position: relative;
-    top: -5px;
+  width: 200px;
+  height: 10px;
+  border-radius: 3px;
+  background: white;
+  position: relative;
+  top: -5px;
 }
 
 /* .search {
@@ -61,23 +57,21 @@ input {
     top: -25px;
 } */
 
-
-
 .search {
-    height: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(39, 229, 49);
-position: relative;
-top: -25px;
+  height: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(229 39 39);
+  position: relative;
+  top: -25px;
 }
-#exchange{
-    border-radius: 50%;
+#exchange {
+  border-radius: 50%;
 }
-.search-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

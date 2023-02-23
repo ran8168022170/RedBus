@@ -63,23 +63,24 @@ const Bus = () => {
   };
   return (
     <div className="">
-      <div className="bus"></div>
       <div>
         <div>
           <h1>Select your seat</h1>
         </div>
         <div
+          id="busSeat"
           className="center"
-          style={{ border: "4px solid red", margin: 100 }}
+          style={{ border: "4px solid white", margin: 40, top: 85 }}
         >
           <div
             className="center"
             style={{
               border: "1px solid white",
-              width: 1200,
+              width: 600,
               height: 200,
               display: "flex",
               justifyContent: "space-around",
+              position: "relative",
             }}
           >
             {upperDetail.map((bus) => (
@@ -94,8 +95,8 @@ const Bus = () => {
           <div
             className="center"
             style={{
-              border: "1px solid white",
-              width: 1200,
+              // border: "1px solid white",
+              width: 600,
               height: 200,
               display: "flex",
               justifyContent: "space-around",
@@ -111,31 +112,35 @@ const Bus = () => {
             ))}
           </div>
         </div>
-        <div style={{ margin: "100px" }}>
+
+        {/* <div style={{ margin: "100px" }}>
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzCBKMj119CvHUsr7smFza8mEhGwirUu2bg&usqp=CAU"
             alt="arrow"
             style={{ width: "400px", height: "30px", marginTop: "0px" }}
           />
-        </div>
+        </div> */}
         {/* <Link
           to={`/ticket/${id}`}
           style={{ textDecoration: "none", color: "white" }}
         > */}
         <div
+          id="submit-button"
           onClick={checkEmptyArr}
-          style={{
-            width: "150px",
-            height: "60px",
-            background: "green",
-            color: "white",
-            fontSize: "large",
-            marginRight: "100px",
-            display: "flex",
-            marginLeft: "1700px",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+          // style={{
+          //   width: "150px",
+          //   height: "60px",
+          //   background: "green",
+          //   color: "white",
+          //   fontSize: "large",
+          //   marginRight: "100px",
+          //   display: "flex",
+          //   marginLeft: "1700px",
+          //   alignItems: "center",
+          //   justifyContent: "center",
+          //   position: "relative",
+          //   top: "220",
+          // }}
         >
           Submit
         </div>

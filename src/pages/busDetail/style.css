@@ -3,4 +3,28 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  background: #ead9d9;
+}
+#busSeat {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 500px;
+  top: -50px;
+}
+
+#submit-button {
+  width: 150px;
+  height: 60px;
+  background-color: green;
+  color: white;
+  font-size: large;
+  margin-right: 100px;
+  display: flex;
+  margin-left: 1700px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 220px;
 }
