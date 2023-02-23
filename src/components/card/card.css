@@ -4,16 +4,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
-    color: black;
-    background-color: white;
+    border: 2px solid rgb(39 229 49);
+        
+    background-color: #08f0e0;
+    border-radius: 12px;
+    margin: 6px 0px;
 }
 
 .listSuper {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: red;
 }
 .date{
     width: 60px;
@@ -35,8 +37,17 @@
 .busName{
     font-size: large;
     font-weight: 700;
-    color: white;
+     color: #000000;
+    position: relative; 
+        
+    background: #08f0e0;
 
+}
+h2,h3{
+    color: #000000;
+        position: relative;
+    
+        background: #08f0e0;
 }
 .date{
     font-size: large;

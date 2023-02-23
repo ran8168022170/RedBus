@@ -1,0 +1,59 @@
+ .auth-form-container,
+.register-form {
+    
+    display: flex;
+    flex-direction: column;
+}
+.auth-form-container{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.register-form{
+    border: solid #08f0e0;
+        margin-top: 5px;
+        width: 400px;
+        height: 600px;
+        background-color: #54c3dc;
+        border-radius: 10px;
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    height: 10px;
+}
+
+button {
+    border: none;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+}
+
+.link-btn {
+    background-color: red;
+    background: black;
+    color: white;
+    text-decoration: underline;
+}
+.mt-3{
+    background: #c6e033;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+

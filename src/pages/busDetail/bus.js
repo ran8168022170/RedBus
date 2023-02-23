@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
@@ -9,6 +10,7 @@ const Bus = () => {
   const { id } = useParams();
   const [count, setCount] = useState(0);
   const [tempArr, setTempArr] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("items")) || [];
@@ -18,11 +20,47 @@ const Bus = () => {
   }, [count]);
 
   const [upperDetail, setUpper] = useState([
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
   ]);
   const [bottomDetail, setBottom] = useState([
-    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
   ]);
+  const checkEmptyArr = () => {
+    if (tempArr.length === 0) {
+      alert("please select atleast one seat");
+      return;
+    } else {
+      navigate(`/ticket/${id}`);
+    }
+  };
   return (
     <div className="">
       <div className="bus"></div>
@@ -80,27 +118,28 @@ const Bus = () => {
             style={{ width: "400px", height: "30px", marginTop: "0px" }}
           />
         </div>
-        <Link
+        {/* <Link
           to={`/ticket/${id}`}
           style={{ textDecoration: "none", color: "white" }}
+        > */}
+        <div
+          onClick={checkEmptyArr}
+          style={{
+            width: "150px",
+            height: "60px",
+            background: "green",
+            color: "white",
+            fontSize: "large",
+            marginRight: "100px",
+            display: "flex",
+            marginLeft: "1700px",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <div
-            style={{
-              width: "150px",
-              height: "60px",
-              background: "green",
-              color: "white",
-              fontSize: "large",
-              marginRight: "100px",
-              display: "flex",
-              marginLeft: "1700px",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            Submit
-          </div>
-        </Link>
+          Submit
+        </div>
+        {/* </Link> */}
       </div>
     </div>
   );

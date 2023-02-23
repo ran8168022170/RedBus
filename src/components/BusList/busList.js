@@ -10,7 +10,7 @@ const BusList = (props) => {
   }, [props.variable]);
   const getData = () => {
     fetch(
-      `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${props.source}&destination=${props.destination}`
+      `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${props.source}&destination=${props.destination}&date=${props.updatedDate}`
     )
       .then((res) => res.json())
       .then((data) => setBusList(data))
@@ -18,6 +18,7 @@ const BusList = (props) => {
         console.log("error: " + error);
       });
   };
+
   function compare(a, b) {
     if (a.ticketPrice < b.ticketPrice) {
       return -1;
@@ -28,6 +29,7 @@ const BusList = (props) => {
 
     return 0;
   }
+  //alert(a > b);
   const sortByName = () => {
     var tempBusList = [...busList];
     tempBusList.sort(compare);

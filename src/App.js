@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
@@ -10,16 +10,29 @@ import Register from "./pages/signUp/signUp";
 import Login from "./pages/signIn/signIn";
 
 function App() {
+  const [forChangeState, SetForChangeState] = useState(1);
+  //alert(forChangeState);
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header
+          SetForChangeState={SetForChangeState}
+          forChangeState={forChangeState}
+        />
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="bus/:id" element={<Bus />}></Route>
           <Route path="ticket/:id" element={<Ticket />}></Route>
           <Route path="/Register" element={<Register />}></Route>
-          <Route path="/login" element={<Login />}></Route>
+          <Route
+            path="/login"
+            element={
+              <Login
+                SetForChangeState={SetForChangeState}
+                forChangeState={forChangeState}
+              />
+            }
+          ></Route>
 
           <Route path="/*" element={<h1>Error Page</h1>}></Route>
         </Routes>

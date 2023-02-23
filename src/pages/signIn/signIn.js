@@ -34,6 +34,7 @@ const Login = (props) => {
     });
   };
 
+  console.log("login" + props.forChangeState);
   const addData = (e) => {
     e.preventDefault();
 
@@ -61,7 +62,9 @@ const Login = (props) => {
           alert("invalid details");
         } else {
           console.log("user login succesfulyy");
-          navigate("/home");
+          props.SetForChangeState(2);
+          //alert("success" + props.forChangeState);
+          navigate("/");
 
           localStorage.setItem("user_login", JSON.stringify(userlogin));
 
@@ -74,44 +77,41 @@ const Login = (props) => {
   return (
     <div className="auth-form-container">
       <h2>Login</h2>
-      <form className="login-form" onSubmit={handleSubmit}>
-        <label htmlFor="email">email</label>
-        <input
-          //value={email}
-          // onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          placeholder="youremail@gmail.com"
-          id="email"
-          name="email"
-          onChange={getdata}
-        />
-        <label htmlFor="password">password</label>
-        <input
-          // value={pass}
-          // onChange={(e) => setPass(e.target.value)}
-          type="password"
-          placeholder="********"
-          id="password"
-          name="password"
-          onChange={getdata}
-        />
-        <button type="submit" onClick={addData}>
-          Log In
-        </button>
-      </form>
-      {/* <button
-        className="link-btn"
-        style={{ background: "black" }}
-        onClick={() => props.onFormSwitch("register")}
-      >
-        Don't have an account? Register here.
-      </button> */}
-      <p className="mt-3" style={{ background: "black" }}>
-        Already Have an Account{" "}
-        <span>
-          <NavLink to="/Register">SignUp</NavLink>
-        </span>
-      </p>
+      <div className="child1">
+        <form className="login-form" onSubmit={handleSubmit}>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            placeholder="youremail@gmail.com"
+            id="email"
+            name="email"
+            onChange={getdata}
+          />
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            placeholder="********"
+            id="password"
+            name="password"
+            onChange={getdata}
+          />
+          <button
+            type="submit"
+            style={{ background: "yellow" }}
+            onClick={addData}
+          >
+            Log In
+          </button>
+          <div className="child2" style={{ height: 20 }}>
+            <p className="mt-3" id="AlreadyHaveAccount">
+              Don't Have An Account ?
+              <span>
+                <NavLink to="/Register">SignUp</NavLink>
+              </span>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

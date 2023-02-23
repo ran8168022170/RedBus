@@ -20,12 +20,12 @@ const Ticket = () => {
   //var busTicketPrice = bus[0].ticketPrice;
 
   if (bus[0]) {
-    //var busTicketPrice = bus[0].ticketPrice;
+    var busTicketPrice = bus[0].ticketPrice;
     console.log(bus[0].ticketPrice);
   }
 
-  // var price = items.length * busTicketPrice;
-  var price = 600;
+  var price = items.length * busTicketPrice;
+  // var price = 600;
 
   var clearLocalStorage = () => {
     const res = JSON.parse(localStorage.getItem("reserved")) || [];

@@ -41,7 +41,7 @@ const Register = () => {
   const addData = (e) => {
     e.preventDefault();
 
-    const { name, email, date, password } = inpval;
+    const { name, email, password } = inpval;
 
     if (name === "") {
       alert("name field is required");
@@ -64,52 +64,48 @@ const Register = () => {
   return (
     <div className="auth-form-container">
       <h1>Registration</h1>
-      <form className="register-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Full name</label>
-        <input
-          //value={name}
-          name="name"
-          onChange={getdata}
-          id="name"
-          placeholder="full Name"
-        />
-        <label htmlFor="email">email</label>
-        <input
-          //value={email}
-          type="email"
-          placeholder="youremail@gmail.com"
-          id="email"
-          name="email"
-          onChange={getdata}
-        />
-        <label htmlFor="password">password</label>
-        <input
-          //value={pass}
-          name="password"
-          onChange={getdata}
-          type="password"
-          placeholder="********"
-          id="password"
-        />
+      <div className="child1">
+        <form className="register-form" onSubmit={handleSubmit}>
+          <label htmlFor="name">Full Name</label>
+          <input
+            //value={name}
+            name="name"
+            onChange={getdata}
+            id="name"
+            placeholder="full Name"
+          />
+          <label htmlFor="email">Email</label>
+          <input
+            //value={email}
+            type="email"
+            placeholder="youremail@gmail.com"
+            id="email"
+            name="email"
+            onChange={getdata}
+          />
+          <label htmlFor="password">Password</label>
+          <input
+            //value={pass}
+            name="password"
+            onChange={getdata}
+            type="password"
+            placeholder="********"
+            id="password"
+          />
 
-        <button type="submit" onClick={addData} style={{ background: "red" }}>
-          Sign Up
-        </button>
-      </form>
-      {/* <button
-        style={{ background: "black" }}
-        className="link-btn"
-        onClick={() => props.onFormSwitch("login")}
-      >
-        Already have an account? Login here.
-      </button> */}
-
-      <p className="mt-3" style={{ background: "black" }}>
-        Already Have an Account
-        <span>
-          <NavLink to="/login">SignIn</NavLink>
-        </span>
-      </p>
+          <button type="submit" onClick={addData}>
+            Sign Up
+          </button>
+          <div className="child2">
+            <p className="mt-3">
+              Already Have an Account
+              <span>
+                <NavLink to="/login">SignIn</NavLink>
+              </span>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

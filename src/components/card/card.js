@@ -10,23 +10,33 @@ const Cards = ({ bus }) => {
     <>
       <Link
         to={`/bus/${bus.id}`}
-        style={{ textDecoration: "none", color: "white" }}
+        style={{ textDecoration: "none", color: "black" }}
       >
         <div class="listSuper">
           <div class="listMain">
-            <div class="busName">{bus.busName}</div>
+            <div class="busName">
+              <h2>{bus.busName}</h2>
+            </div>
             <div class="daparture">
               <div className="departureLabel">Arrival</div>
-              <div className="departureName">{bus.arrivalTime}</div>
+              <div className="departureName">
+                <h3>{bus.arrivalTime}</h3>
+              </div>
             </div>
             <div class="arrival">
               <div className="arrivalLabel">Departure</div>
-              <div className="arrivalName">{bus.departureTime}</div>
+              <div className="arrivalName">
+                <h3>{bus.departureTime}</h3>
+              </div>
             </div>
             <div class="date">
-              <div className="ratingInside">{bus.date}</div>
+              <div className="ratingInside">
+                <h3>{bus.date}</h3>
+              </div>
             </div>
-            <div class="fare">{bus.ticketPrice}/-</div>
+            <div class="fare">
+              <h3>{bus.ticketPrice} /-</h3>
+            </div>
           </div>
         </div>
       </Link>

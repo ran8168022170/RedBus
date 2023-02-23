@@ -2,6 +2,11 @@
     padding: 0 3rem 3rem 3rem;
 }
 
+h1{
+    background: #05e208eb;
+    border-radius: 5px;
+}
+
 .list__title {
     font-size: 1.75rem;
     margin: 2.5rem;
@@ -18,8 +23,9 @@
     justify-content: space-around;
     align-items: center;
     width: 800px;
-    border: 2px solid rgb(215, 206, 206);
-    background-color: white;
+    border: 2px solid rgb(57 180 184);
+    background-color: #00ffef;
+    border-radius: 5px;
 }
 
 .submain1 {

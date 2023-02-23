@@ -8,8 +8,27 @@ const Home = () => {
   const [source, setSource] = useState("");
   const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
+  const [updatedDate, setupdatedDate] = useState("");
+
   const [variable, setVar] = useState(1);
   //const [busList, setBusList] = useState([]);
+
+  const d = new Date();
+  let day = d.getDate();
+  day = String(day);
+  let month = d.getMonth()+1;
+  var monthStr = String(month);
+
+  if (month < 10) {
+    monthStr = "0" + monthStr;
+  }
+  let year = d.getFullYear();
+  year = String(year);
+  var currDate = year + "-" + monthStr + "-" + day;
+ //alert(currDate);
+  
+
+//alert(date);
 
   
 
@@ -22,6 +41,14 @@ const Home = () => {
   };
   const search = () => {
     setVar(variable + 1);
+    if(date){
+      if(date>=currDate){
+        setupdatedDate(date);
+      }else{ 
+      alert("please select current date or after it");
+        }
+
+    }
   };
 
   return (
@@ -36,9 +63,8 @@ const Home = () => {
         }}
       >
         <div class="mainbox">
-        {/* <img src={bg_image} /> */}
-          <div>
-            <div>
+          
+          
               <input
                 type="text"
                 id="source"
@@ -47,18 +73,19 @@ const Home = () => {
                 value={source}
                 onChange={(e) => setSource(e.target.value)}
               />
-            </div>
-          </div>
-          <div>
+            
+          
+          
             <img
+            id="exchange"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqTFeoAjbWn3mlI6UX1UuxdKxX1w40MBHVg&usqp=CAU"
               width="40px"
               onClick={exchange}
               alt="exchange"
             />
-          </div>
-          <div>
-            <div>
+          
+          
+            
               <input
                 type="text"
                 id="destination"
@@ -67,30 +94,30 @@ const Home = () => {
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
               />
-            </div>
-          </div>
-          <div>
-            <div>
+            
+          
+          
+            
               <input
                 type="date"
                 id="date"
                 placeholder="Date"
                 onChange={(e) => setDate(e.target.value)}
               />
-            </div>
-          </div>
-          <div>
+            
+          
+          
             <button class="search" onClick={search}>
-              search buses
+              search 
             </button>
-          </div>
+          
         </div>
       </div>
 
       <BusList 
       source={source}
       destination={destination}
-      date={date}
+      updatedDate={updatedDate}
       variable={variable}
 
       

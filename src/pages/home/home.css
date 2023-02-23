@@ -22,23 +22,62 @@
 
 }
 
+
 .mainbox {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1100px;
+    position: relative;
+    z-index: 18;
+    background: #00ffef;
+    border-radius: 5px;
+    height: 49px;
 
+
+}
+.outside-input {
+
+margin-left: 5px;
+margin-right: 5px;
 }
 
 input {
     width: 200px;
-    height: 30px;
+    height: 10px;
     border-radius: 3px;
     background: white;
+    position: relative;
+    top: -5px;
 }
 
-.search {
+/* .search {
     background-color: red;
-    height: 30px;
-    color: white;
+    height: 10px;
+    
     font-size: medium;
+    background-color: rgb(39, 229, 49);
+    position: relative;
+    top: -25px;
+} */
+
+
+
+.search {
+    height: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 229, 49);
+position: relative;
+top: -25px;
+}
+#exchange{
+    border-radius: 50%;
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
