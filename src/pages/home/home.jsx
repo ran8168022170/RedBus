@@ -22,8 +22,7 @@ const Home = () => {
   }
   let year = d.getFullYear();
   year = String(year);
-  //2023-12-01 from calender
-  // 2023-02-23
+
   var currDate = year + "-" + monthStr + "-" + day;
 
   const exchange = () => {
@@ -102,5 +101,6 @@ const Home = () => {
     </>
   );
 };
+// updated
 
 export default Home;

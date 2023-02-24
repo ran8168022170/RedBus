@@ -4,7 +4,7 @@ import "./busList.css";
 
 const BusList = (props) => {
   const [busList, setBusList] = useState([]);
-
+  // updated
   useEffect(() => {
     getData();
   }, [props.variable]);

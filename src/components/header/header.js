@@ -163,6 +163,7 @@ export default function Header(props) {
     if (checked) setChecked(0);
     else setChecked(1);
   }
+  // updated
 
   return (
     <div id="nav-bar">

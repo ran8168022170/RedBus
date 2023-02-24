@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ bus }) => {
   const [isLoading, setIsLoading] = useState(true);
-
+  // updated
   return (
     <>
       <Link

@@ -59,6 +59,7 @@ const Bus = () => {
       navigate(`/ticket/${id}`);
     }
   };
+  // updated
   return (
     <div className="">
       <div>

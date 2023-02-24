@@ -88,7 +88,7 @@ const Register = () => {
             name="password"
             onChange={getdata}
             type="password"
-            placeholder="********"
+            placeholder="******"
             id="password"
           />
 
@@ -110,5 +110,5 @@ const Register = () => {
     </div>
   );
 };
-
+// updated 2
 export default Register;

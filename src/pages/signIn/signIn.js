@@ -21,10 +21,7 @@ const Login = (props) => {
   console.log(inpval);
 
   const getdata = (e) => {
-    // console.log(e.target.value);
-
     const { value, name } = e.target;
-    // console.log(value,name);
 
     setInpval(() => {
       return {
@@ -34,12 +31,10 @@ const Login = (props) => {
     });
   };
 
-  // console.log("login" + props.forChangeState);
   const addData = (e) => {
     e.preventDefault();
 
     const getuserArr = localStorage.getItem("userData");
-    // console.log(getuserArr);
 
     const { email, password } = inpval;
 
@@ -76,6 +71,7 @@ const Login = (props) => {
   function cross() {
     navigate("/");
   }
+  // updated
 
   return (
     <div className="auth-form-container">

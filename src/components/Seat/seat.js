@@ -31,6 +31,7 @@ const Seat = (props) => {
     props.setTempArr(temp2);
     props.setCount(1);
   }
+  // updated
 
   return (
     <>
