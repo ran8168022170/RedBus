@@ -37,21 +37,51 @@ const Seat = (props) => {
       {reserved.includes(props.bus) ? (
         <div
           id={props.bus}
-          style={{ width: 55, height: 30, background: "grey" }}
+          style={{
+            width: 55,
+            height: 30,
+            background: "#959595",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            cursor: "pointer",
+          }}
           onClick={checkSeat}
-        ></div>
+        >
+          {props.bus}
+        </div>
       ) : props.tempArr.includes(props.bus) ? (
         <div
           id={props.bus}
           onClick={checkSeat}
-          style={{ width: 55, height: 30, background: "green" }}
-        ></div>
+          style={{
+            width: 55,
+            height: 30,
+            background: "#454545",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            cursor: "pointer",
+          }}
+        >
+          {props.bus}
+        </div>
       ) : (
         <div
           id={props.bus}
           onClick={checkSeat}
-          style={{ width: 55, height: 30, background: "blue" }}
-        ></div>
+          style={{
+            width: 55,
+            height: 30,
+            background: "white",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            cursor: "pointer",
+          }}
+        >
+          {props.bus}
+        </div>
       )}
     </>
   );

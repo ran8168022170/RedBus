@@ -72,3 +72,18 @@ button {
   border-radius: 4px;
   background: #78dc54;
 }
+.cross {
+  color: #131a1a;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -50px;
+  left: 600px;
+  font-size: x-large;
+  background-color: #54c3dc;
+  cursor: pointer;
+}
+#login-text {
+  border: 1px solid red;
+  border-radius: 4px;
+}

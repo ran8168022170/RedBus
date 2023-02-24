@@ -1,18 +1,22 @@
-.seatNumber{
-    font-size: larger;
-    color: white;
-    
+.seatNumber {
+  font-size: larger;
+  color: white;
 }
-.back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 40px;
-    background: green;
-    color: white;
-    margin-left: 100px;
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  background: green;
+  color: white;
+  margin-left: 100px;
+  position: relative;
+  left: -97px;
 }
-.ticket-h{
-    background-color: red;
+.ticket-h {
+  background-color: red;
+}
+.ticket-body {
+  margin-left: 639px;
 }

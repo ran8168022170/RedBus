@@ -162,8 +162,6 @@ export default function Header(props) {
   function toggleMenu() {
     if (checked) setChecked(0);
     else setChecked(1);
-
-    console.log("Working");
   }
 
   return (
@@ -188,47 +186,20 @@ export default function Header(props) {
         {checked ? (
           <div className="sub-menu-wrap" id="subMenu">
             <div className="sub-menu">
-              <div className="user-info">
-                <h3>This is for demo</h3>
-              </div>
-              <a href="#" className="sub-menu-link">
-                <p onClick={openLoginPage}>Edit profile</p>
-                <span>{">"}</span>
-              </a>
-              <a href="#" className="sub-menu-link">
-                <p>Settings</p>
-                <span>{">"}</span>
-              </a>
               {state === 1 ? (
                 <Link
+                  className="login-anchor"
                   onClick={changeState}
                   to={"Login"}
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    width: 60,
-                    height: 30,
-                  }}
                 >
                   <div className="sub-menu-link">
-                    <p>Log in</p>
-                    <span>&gt;</span>
+                    <p className="ptag">Login</p>
                   </div>
                 </Link>
               ) : (
-                <Link
-                  onClick={changeState2}
-                  to={"/"}
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    width: 60,
-                    height: 30,
-                  }}
-                >
+                <Link className="logout-anchor" onClick={changeState2} to={"/"}>
                   <div className="sub-menu-link">
-                    <p>Log out</p>
-                    <span>&gt;</span>
+                    <p className="ptag">Logout</p>
                   </div>
                 </Link>
               )}

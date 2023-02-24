@@ -1,0 +1,97 @@
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #ead9d9;
+}
+#busSeat {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 500px;
+  top: -50px;
+}
+
+#submit-button {
+  width: 150px;
+  height: 60px;
+  background-color: green;
+  color: white;
+  font-size: large;
+  margin-right: 100px;
+  display: flex;
+  margin-left: 1700px;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+}
+
+.seatIntro {
+  position: relative;
+  height: 40px;
+  bottom: -88px;
+  left: 538px;
+  width: 813px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.childSeatIntro {
+  width: 55px;
+  height: 30px;
+}
+#reserved-text {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#empty-text {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#reserved {
+  background-color: #959595;
+}
+#empty {
+  background: white;
+}
+.direction {
+  position: relative;
+  height: 100px;
+  bottom: -99px;
+  left: 538px;
+  width: 100px;
+}
+.image-direction {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+#upperSeat {
+  border: 1px solid white;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+#lowerSeat {
+  border: 1px solid white;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}

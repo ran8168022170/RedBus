@@ -1,49 +1,55 @@
 .bus__list {
-    padding: 0 3rem 3rem 3rem;
+  padding: 0 3rem 3rem 3rem;
 }
 
-h1{
-    background: #05e208eb;
-    border-radius: 5px;
+h1 {
+  background: #05e208eb;
+  border-radius: 2px;
 }
 
 .list__title {
-    font-size: 1.75rem;
-    margin: 2.5rem;
+  font-size: 1.75rem;
+  margin: 2.5rem;
 }
 
 .list__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 800px;
-    border: 2px solid rgb(57 180 184);
-    background-color: #00ffef;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  border: 2px solid rgb(57 180 184);
+  background-color: #00ffef;
+  border-radius: 5px;
+  /* position: relative;
+  top: 51px; */
 }
 
 .submain1 {
-    background-color: rgb(78, 211, 54);
-    width: 70px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-size: medium;
+  background-color: rgb(78, 211, 54);
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  cursor: pointer;
 }
 
 .super {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.heading{
-    background-color: white;
+.heading {
+  background-color: white;
+}
+.pointer {
+  cursor: pointer;
 }

@@ -76,7 +76,10 @@
 
   right: -144px;
   position: absolute;
-  top: -820px;
+  top: -871px;
+  height: 2px;
+  border: 1px solid aqua;
+  border-radius: 4px;
 }
 
 .user-info {
@@ -133,4 +136,38 @@
 
 .sub-menu-link {
   color: blue;
+}
+.lougin-p {
+  position: relative;
+  top: -1px;
+}
+
+.login-anchor {
+  text-decoration: none;
+  color: black;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  left: 1px;
+  background: white;
+  color: white;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.logout-anchor {
+  text-decoration: none;
+  color: black;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  left: 1px;
+  background: white;
+  color: white;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.ptag {
+  color: white;
+  font-weight: 400;
+  padding: 2px;
 }

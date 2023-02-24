@@ -31,7 +31,7 @@ const Ticket = () => {
   };
 
   return (
-    <div>
+    <div className="ticket-body">
       <h1 className="ticket-h" style={{ color: "black" }}>
         You Have Selected Following Seats :{" "}
       </h1>

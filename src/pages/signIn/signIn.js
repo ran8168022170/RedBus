@@ -34,12 +34,12 @@ const Login = (props) => {
     });
   };
 
-  console.log("login" + props.forChangeState);
+  // console.log("login" + props.forChangeState);
   const addData = (e) => {
     e.preventDefault();
 
     const getuserArr = localStorage.getItem("userData");
-    console.log(getuserArr);
+    // console.log(getuserArr);
 
     const { email, password } = inpval;
 
@@ -59,7 +59,7 @@ const Login = (props) => {
         });
 
         if (userlogin.length === 0) {
-          alert("invalid details");
+          alert("Invalid Detail or You Have Not SignUp Yet");
         } else {
           console.log("user login succesfulyy");
           props.SetForChangeState(2);
@@ -67,15 +67,27 @@ const Login = (props) => {
 
           localStorage.setItem("user_login", JSON.stringify(userlogin));
         }
+      } else {
+        alert("You Have No account,Please SignUp");
       }
     }
   };
 
+  function cross() {
+    navigate("/");
+  }
+
   return (
     <div className="auth-form-container">
-      <h2>Login</h2>
+      <h2 id="login-text" style={{ border: "1px solid red", borderRadius: 4 }}>
+        Login
+      </h2>
       <div className="child1">
         <form className="login-form" onSubmit={handleSubmit}>
+          <div className="cross" onClick={cross}>
+            X
+          </div>
+
           <label htmlFor="email">Email</label>
           <input
             type="email"

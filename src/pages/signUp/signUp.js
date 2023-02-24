@@ -56,12 +56,18 @@ const Register = () => {
       navigate("/login");
     }
   };
+  function cross() {
+    navigate("/");
+  }
 
   return (
     <div className="auth-form-container">
       <h1 id="form-name">Registration</h1>
       <div className="child1">
         <form className="register-form" onSubmit={handleSubmit}>
+          <div className="cross" onClick={cross}>
+            X
+          </div>
           <label htmlFor="name">Full Name</label>
           <input
             name="name"

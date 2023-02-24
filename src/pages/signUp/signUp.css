@@ -60,3 +60,14 @@ input {
 #form-name {
   background-color: #08f0e0;
 }
+.cross {
+  color: #131a1a;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -50px;
+  left: 600px;
+  font-size: x-large;
+  background-color: #54c3dc;
+  cursor: pointer;
+}

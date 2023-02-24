@@ -7,14 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  /* margin: 30px; */
   padding: 5px;
   font-weight: 20;
   height: 600px;
-  width: 95%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin: 10px 40px;
+  width: 100%;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  /* margin: 10px 40px; */
   color: white;
   align-items: center;
   border: 2px solid red;
@@ -32,6 +32,7 @@
   background: #00ffef;
   border-radius: 5px;
   height: 49px;
+  top: 56px;
 }
 .outside-input {
   margin-left: 5px;
