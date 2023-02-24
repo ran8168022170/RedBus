@@ -1,81 +1,81 @@
 .listMain {
-    width: 1000px;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid rgb(39 229 49);
-        
-    background-color: #08f0e0;
-    border-radius: 12px;
-    margin: 6px 0px;
+  width: 1000px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(39 229 49);
+
+  background-color: #08f0e0;
+  border-radius: 12px;
+  margin: 6px 0px;
 }
 
 .listSuper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
 }
-.date{
-    width: 60px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: green;
-    border: 2px solid green;
+.date {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+  border: 2px solid green;
 }
-.departureName{
-    font-size: large;
-    font-weight: 700;
+.departureName {
+  font-size: large;
+  font-weight: 700;
 }
 
 .arrivalName {
-    font-size: large;
-    font-weight: 700;
+  font-size: large;
+  font-weight: 700;
 }
-.busName{
-    font-size: large;
-    font-weight: 700;
-     color: #000000;
-    position: relative; 
-        
-    background: #08f0e0;
+.busName {
+  font-size: large;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
 
+  background: #08f0e0;
 }
-h2,h3{
-    color: #000000;
-        position: relative;
-    
-        background: #08f0e0;
+h2,
+h3 {
+  color: #000000;
+  position: relative;
+
+  background: #08f0e0;
 }
-.date{
-    
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: green;
-        border: 2px solid green;
-    font-size: large;
-    font-weight: 700;
-    width: 100px;
-    height: 30px;
-    
-    color: white;
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+  border: 2px solid green;
+  font-size: large;
+  font-weight: 700;
+  width: 100px;
+  height: 30px;
+
+  color: white;
 }
-.daparture{
-    padding: 2px;
-    color: white;
+.daparture {
+  padding: 2px;
+  color: white;
 }
-.arrival{
-    padding: 2px;
-    color: white;
+.arrival {
+  padding: 2px;
+  color: white;
 }
-.fare{
-    font-size: large;
-    font-weight: 700;
-    background-color: red;
-    color: white;
+.fare {
+  font-size: large;
+  font-weight: 700;
+  background-color: red;
+  color: white;
 }
+
+/* update css */

@@ -26,8 +26,6 @@ h1 {
   border: 2px solid rgb(57 180 184);
   background-color: #00ffef;
   border-radius: 5px;
-  /* position: relative;
-  top: 51px; */
 }
 
 .submain1 {
@@ -50,6 +48,5 @@ h1 {
 .heading {
   background-color: white;
 }
-.pointer {
-  cursor: pointer;
-}
+
+/* update css */
