@@ -37,21 +37,14 @@ const Home = () => {
       if (date >= currDate) {
         setupdatedDate(date);
       } else {
-        alert("You Have Select Past Date,Select Current or Future Date");
+        alert("You Have Selected Past Date,Select Current or Future Date");
       }
     }
   };
 
   return (
     <div className="super-main">
-      <div
-        className="main"
-        // style={{
-        //   backgroundImage: `url(${bg_image})`,
-        //   backgroundRepeat: "round",
-        //   backgroundSize: "cover",
-        // }}
-      >
+      <div className="main">
         <div class="mainbox">
           <input
             type="text"

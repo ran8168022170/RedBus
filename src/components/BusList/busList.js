@@ -6,12 +6,7 @@ const BusList = (props) => {
   const [busList, setBusList] = useState([]);
   // updated
   useEffect(() => {
-    getData();
-    // if (busList.length === 0) {
-    //   alert("Data Not Present On Given Input , Change the value Of");
-    // }
-  }, [props.variable]);
-  const getData = () => {
+    // getData();
     fetch(
       `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${props.source}&destination=${props.destination}&date=${props.updatedDate}`
     )
@@ -20,7 +15,10 @@ const BusList = (props) => {
       .catch((error) => {
         console.log("error: " + error);
       });
-  };
+  }, [props.variable]);
+  // const getData = () => {
+
+  // };
 
   function compare(a, b) {
     if (a.busName < b.busName) {
