@@ -41,17 +41,17 @@ const Register = () => {
     const { name, email, password } = inpval;
 
     if (name === "") {
-      alert("name field is required");
+      alert("Name field is required");
     } else if (email === "") {
-      alert("email field is required");
+      alert("Email field is required");
     } else if (!email.includes("@")) {
-      alert("email @ required");
+      alert("Email @ required");
     } else if (password === "") {
-      alert("pass field is required");
+      alert("Password field is required");
     } else if (password.length < 5) {
-      alert("password length is short");
+      alert("Password length is short");
     } else {
-      console.log("data added succesfully");
+      alert("User SignUp successfully");
       localStorage.setItem("userData", JSON.stringify([...data, inpval]));
       navigate("/login");
     }
@@ -73,7 +73,7 @@ const Register = () => {
             name="name"
             onChange={getdata}
             id="name"
-            placeholder="full Name"
+            placeholder="Full Name"
           />
           <label htmlFor="email">Email</label>
           <input

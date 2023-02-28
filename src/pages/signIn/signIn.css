@@ -86,5 +86,9 @@ button {
 #login-text {
   border: 1px solid red;
   border-radius: 4px;
+  color: #000000;
+  position: relative;
+  background: #b0f008;
+  top: 50px;
 }
 /* update css */

@@ -37,20 +37,20 @@ const Home = () => {
       if (date >= currDate) {
         setupdatedDate(date);
       } else {
-        alert("please select current date or after it");
+        alert("You Have Select Past Date,Select Current or Future Date");
       }
     }
   };
 
   return (
-    <>
+    <div className="super-main">
       <div
         className="main"
-        style={{
-          backgroundImage: `url(${bg_image})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
+        // style={{
+        //   backgroundImage: `url(${bg_image})`,
+        //   backgroundRepeat: "round",
+        //   backgroundSize: "cover",
+        // }}
       >
         <div class="mainbox">
           <input
@@ -98,7 +98,7 @@ const Home = () => {
         updatedDate={updatedDate}
         variable={variable}
       />
-    </>
+    </div>
   );
 };
 // updated

@@ -2,10 +2,10 @@
   padding: 0 3rem 3rem 3rem;
 }
 
-h1 {
+/* h1 {
   background: #05e208eb;
   border-radius: 2px;
-}
+} */
 
 .list__title {
   font-size: 1.75rem;
@@ -16,6 +16,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 60%;
+  margin-left: 20%;
 }
 
 .main1 {

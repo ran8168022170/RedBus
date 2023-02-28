@@ -10,7 +10,7 @@ const Seat = (props) => {
     const c = Number(e.target.id);
 
     if (reserved.includes(c)) {
-      alert("reserved");
+      alert("This Seat is Reserved ,Please Select Another Seat");
       return;
     }
 

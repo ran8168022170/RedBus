@@ -12,10 +12,11 @@
 }
 
 .listSuper {
+  width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: #cd3737;
 }
 .date {
   width: 60px;

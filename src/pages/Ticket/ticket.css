@@ -10,14 +10,18 @@
   height: 40px;
   background: green;
   color: white;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   position: relative;
-  left: -97px;
+  left: 0%;
 }
 .ticket-h {
-  background-color: red;
+  /* background-color: red; */
 }
 .ticket-body {
-  margin-left: 639px;
+  top: 70px;
+  width: 40%;
+  position: relative;
+  left: 40%;
 }
+
 /* update css */

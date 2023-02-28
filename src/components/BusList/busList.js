@@ -7,6 +7,9 @@ const BusList = (props) => {
   // updated
   useEffect(() => {
     getData();
+    // if (busList.length === 0) {
+    //   alert("Data Not Present On Given Input , Change the value Of");
+    // }
   }, [props.variable]);
   const getData = () => {
     fetch(

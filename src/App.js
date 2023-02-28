@@ -8,9 +8,11 @@ import Ticket from "./pages/Ticket/ticket";
 import Bus from "./pages/busDetail/bus";
 import Register from "./pages/signUp/signUp";
 import Login from "./pages/signIn/signIn";
+import Cards from "./components/card/card";
 
 function App() {
   const [forChangeState, SetForChangeState] = useState(1);
+  const [singleBusVar, setSingleBusVar] = useState(0);
   //alert(forChangeState);
   return (
     <div className="App">
@@ -21,9 +23,22 @@ function App() {
         />
         <Routes>
           <Route index element={<Home />}></Route>
-          <Route path="bus/:id" element={<Bus />}></Route>
+          <Route
+            path="bus/:id"
+            element={<Bus singleBusVar={singleBusVar} />}
+          ></Route>
           <Route path="ticket/:id" element={<Ticket />}></Route>
           <Route path="/Register" element={<Register />}></Route>
+          <Route
+            path="/card"
+            element={
+              <Cards
+                singleBusVar={singleBusVar}
+                setSingleBusVar={setSingleBusVar}
+              />
+            }
+          ></Route>
+
           <Route
             path="/login"
             element={

@@ -41,11 +41,11 @@ const Login = (props) => {
     if (email === "") {
       alert("email field is required");
     } else if (!email.includes("@")) {
-      alert("email @ required");
+      alert("Email @ required");
     } else if (password === "") {
-      alert("pass field is required");
+      alert("Password field is required");
     } else if (password.length < 5) {
-      alert("password length is short");
+      alert("Password length is short");
     } else {
       if (getuserArr && getuserArr.length) {
         const userdata = JSON.parse(getuserArr);
@@ -56,14 +56,14 @@ const Login = (props) => {
         if (userlogin.length === 0) {
           alert("Invalid Detail or You Have Not SignUp Yet");
         } else {
-          console.log("user login succesfulyy");
+          alert("User Login Successfully");
           props.SetForChangeState(2);
           navigate("/");
 
           localStorage.setItem("user_login", JSON.stringify(userlogin));
         }
       } else {
-        alert("You Have No account,Please SignUp");
+        alert("You Don't Have Account,Please SignUp");
       }
     }
   };
@@ -75,9 +75,7 @@ const Login = (props) => {
 
   return (
     <div className="auth-form-container">
-      <h2 id="login-text" style={{ border: "1px solid red", borderRadius: 4 }}>
-        Login
-      </h2>
+      <h2 id="login-text">Login</h2>
       <div className="child1">
         <form className="login-form" onSubmit={handleSubmit}>
           <div className="cross" onClick={cross}>

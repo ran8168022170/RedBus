@@ -58,7 +58,10 @@ input {
 }
 
 #form-name {
-  background-color: #08f0e0;
+  color: #000000;
+  position: relative;
+  background: #b0f008;
+  top: 50px;
 }
 .cross {
   color: #131a1a;

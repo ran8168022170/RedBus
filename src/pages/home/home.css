@@ -1,21 +1,23 @@
 * {
-  background-color: red;
+  background-color: #cd3737;
 }
 .main {
-  background: red;
+  background: #cd3737;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  /* padding: 5px; */
   font-weight: 20;
   height: 600px;
   width: 100%;
 
   color: white;
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   object-fit: cover;
-  background-image: "https: //www.shutterstock.com/image-vector/arrows-exchange-horizontal-icon-primitive-260nw-319667090.jpg";
+  background-image: url(/static/media/background.7d67a4ee.jpg);
+  background-repeat: round;
+  background-size: cover;
 }
 
 .mainbox {
@@ -61,5 +63,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.super-main {
+  width: 100%;
 }
 /* update css */
