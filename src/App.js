@@ -29,15 +29,6 @@ function App() {
           ></Route>
           <Route path="ticket/:id" element={<Ticket />}></Route>
           <Route path="/Register" element={<Register />}></Route>
-          <Route
-            path="/card"
-            element={
-              <Cards
-                singleBusVar={singleBusVar}
-                setSingleBusVar={setSingleBusVar}
-              />
-            }
-          ></Route>
 
           <Route
             path="/login"

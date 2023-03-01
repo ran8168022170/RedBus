@@ -66,11 +66,21 @@ export default function Header(props) {
         {checked ? (
           <div className="sub-menu-wrap" id="subMenu">
             {state === 1 ? (
-              <Link className="login-anchor" onClick={changeState} to={"Login"}>
+              <Link
+                className="login-anchor"
+                id="login-text-header"
+                onClick={changeState}
+                to={"Login"}
+              >
                 Login
               </Link>
             ) : (
-              <Link className="logout-anchor" onClick={changeState2} to={"/"}>
+              <Link
+                className="logout-anchor"
+                id="logout-text-header"
+                onClick={changeState2}
+                to={"/"}
+              >
                 Logout
               </Link>
             )}

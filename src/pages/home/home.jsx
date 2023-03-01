@@ -94,6 +94,5 @@ const Home = () => {
     </div>
   );
 };
-// updated
 
 export default Home;

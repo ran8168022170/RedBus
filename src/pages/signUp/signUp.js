@@ -5,15 +5,8 @@ import { NavLink } from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
-  // const [email, setEmail] = useState("");
-  //const [pass, setPass] = useState("");
-  //const [name, setName] = useState("");
 
-  const handleSubmit = (e) => {
-    // e.preventDefault();
-    //console.log(email);
-    //console.log(name);
-  };
+  const handleSubmit = (e) => {};
 
   const [inpval, setInpval] = useState({
     name: "",

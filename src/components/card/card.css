@@ -44,8 +44,7 @@
 
   background: #08f0e0;
 }
-h2,
-h3 {
+.bus-property {
   color: #000000;
   position: relative;
 
@@ -78,5 +77,3 @@ h3 {
   background-color: red;
   color: white;
 }
-
-/* update css */

@@ -4,9 +4,8 @@ import "./busList.css";
 
 const BusList = (props) => {
   const [busList, setBusList] = useState([]);
-  // updated
+
   useEffect(() => {
-    // getData();
     fetch(
       `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?source=${props.source}&destination=${props.destination}&date=${props.updatedDate}`
     )
@@ -16,9 +15,6 @@ const BusList = (props) => {
         console.log("error: " + error);
       });
   }, [props.variable]);
-  // const getData = () => {
-
-  // };
 
   function compare(a, b) {
     if (a.busName < b.busName) {

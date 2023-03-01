@@ -4,14 +4,9 @@ import "./signIn.css";
 import { NavLink } from "react-router-dom";
 
 const Login = (props) => {
-  // const [email, setEmail] = useState("");
-  //const [pass, setPass] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    // e.preventDefault();
-    // console.log(email);
-  };
+  const handleSubmit = (e) => {};
   const [inpval, setInpval] = useState({
     email: "",
     password: "",

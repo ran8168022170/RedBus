@@ -14,23 +14,6 @@ const Bus = (props) => {
 
   console.log("from bus", props.singleBusVar);
 
-  // useEffect(() => {
-  //   getData();
-  //   // if (busList.length === 0) {
-  //   //   alert("Data Not Present On Given Input , Change the value Of");
-  //   // }
-  // }, [props.singleBusVar]);
-  // const getData = () => {
-  //   fetch(
-  //     `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses?id=${id}`
-  //   )
-  //     .then((res) => res.json())
-  //     .then((data) => setSetSingleBus(data))
-  //     .catch((error) => {
-  //       console.log("error: " + error);
-  //     });
-  // };
-
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("items")) || [];
     if (items) {
@@ -85,12 +68,10 @@ const Bus = (props) => {
     <div className="bus">
       <div>
         <div>
-          <h1>Select your seat</h1>
+          <h1 id="Select-seat-h">Select your seat</h1>
         </div>
-        {/* <div className="single-bus-card">
-          <Cards bus={singleBus} />
-        </div> */}
-        <div id="busSeat" className="center" style={{ top: 85 }}>
+
+        <div id="busSeat" className="center">
           <div className="center" id="upperSeat">
             {upperDetail.map((bus) => (
               <Seat

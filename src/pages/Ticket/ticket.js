@@ -32,18 +32,17 @@ const Ticket = () => {
 
   return (
     <div className="ticket-body">
-      <h1 className="ticket-h" style={{ color: "black" }}>
-        You Have Selected Following Seats :{" "}
-      </h1>
+      <h1 id="ticket-info-h">Your Ticket Info:</h1>
+      <h2 className="ticket-h">You Have Selected Following Seats : </h2>
       {items.map((seat) => (
         <span className="seatNumber"> {seat} </span>
       ))}
-      <h1 className="ticket-h">
+      <h2 className="ticket-h">
         Your Total Bill Amount is :
         <span style={{ color: "green" }}>
           {isNaN(price) ? "Calculating ....!!!" : "₹ " + price}
         </span>
-      </h1>
+      </h2>
 
       <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
         <div className="back" onClick={clearLocalStorage}>
@@ -54,6 +53,6 @@ const Ticket = () => {
   );
 };
 
-// updated
-
 export default Ticket;
+
+//update

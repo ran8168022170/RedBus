@@ -6,14 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 5px; */
   font-weight: 20;
   height: 600px;
   width: 100%;
 
   color: white;
   align-items: center;
-  /* border: 2px solid red; */
   object-fit: cover;
   background-image: url(/static/media/background.7d67a4ee.jpg);
   background-repeat: round;
@@ -67,4 +65,3 @@ input {
 .super-main {
   width: 100%;
 }
-/* update css */

@@ -9,9 +9,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
-  /* left: 23%;
-    top: 85px; */
+  position: relative;
+  top: 40px;
+}
+
+#Select-seat-h {
+  color: white;
 }
 
 #submit-button {
@@ -20,24 +23,19 @@
   background-color: green;
   color: white;
   font-size: large;
-  /* margin-right: 100px; */
   display: flex;
-  /* margin-left: 1700px; */
   align-items: center;
   justify-content: center;
-  /* position: relative; */
-  /* top: 100px; */
-  /* left: 73%; */
+
   cursor: pointer;
-  margin-top: 46px;
-  margin-left: 78%;
+  margin-left: 149%;
+  position: relative;
+  bottom: -99px;
 }
 
 .seatIntro {
-  /*position: relative; */
   height: 40px;
-  /* bottom: -88px;
-    left: 23%; */
+
   width: 100%;
   border: 1px solid black;
   display: flex;
@@ -70,11 +68,10 @@
   background: white;
 }
 .direction {
-  /* position: relative; */
   height: 100px;
   bottom: -99px;
-  /* left: 23%; */
   width: 100px;
+  position: relative;
 }
 .image-direction {
   width: 100px;
@@ -97,14 +94,11 @@
   display: flex;
   justify-content: space-around;
 }
-/* update css */
 .bus-direction-text {
   color: white;
   font-size: large;
   font-weight: 300;
   width: 200px;
-  /* position: relative; */
-  /* left: 23%; */
 }
 .bus {
   display: flex;
